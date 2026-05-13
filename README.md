@@ -33,7 +33,7 @@ Creates a new database named ZEPTO for storing all product-related data.
 Defines the main table structure with appropriate data types.
 
 
-##  Data Exploration
+###  Data Exploration
 
 #### Total Records
 ```sql
@@ -82,7 +82,7 @@ HAVING count(ID) > 1;
 Identifies duplicate product entries.
 
 
-## Data Cleaning
+### Data Cleaning
 #### Detect Incorrect Pricing
 ```sql
 SELECT * FROM zepto WHERE mrp = 0 OR discountedSellingPrice = 0;
@@ -105,7 +105,7 @@ WHERE ID > 0;
 Converts values into readable currency format.
 
 
-##  Business Insights
+###  Business Insights
 ####  Top 10 Best Discounted Products
 ```sql
 SELECT DISTINCT name, mrp, discountPercent FROM zepto
@@ -190,7 +190,7 @@ ORDER BY total_weight;
 ```
 Measures inventory distribution.
 
-##  Findings & Insights Report
+###  Findings & Insights Report
 Based on the SQL analysis performed on the Zepto dataset, the following key insights were identified:
 
 - High Discount Products Drive Visibility :Products with higher discount percentages tend to appear prominently, helping attract customers.
@@ -201,7 +201,7 @@ Based on the SQL analysis performed on the Zepto dataset, the following key insi
 - Inventory Imbalance: Certain categories hold higher inventory weight, indicating potential overstock or demand mismatch.
 
 
-##  Conclusion
+###  Conclusion
 This project demonstrates how SQL can be effectively used to transform raw data into meaningful business insights. Through structured querying and analysis:
 
 - Data quality issues were identified and resolved.
